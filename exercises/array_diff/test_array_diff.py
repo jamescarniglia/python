@@ -1,5 +1,6 @@
 import unittest
-from arraydiff import *
+
+from exercises.array_diff.arraydiff import array_diff
 
 
 class TestArray_diff(unittest.TestCase):

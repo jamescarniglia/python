@@ -1,11 +1,8 @@
-#!/usr/local/sbin/python
-
 def alphabet_position(text):
     alphabet = 'xabcdefghijklmnopqrstuvwxyz'
     result = []
     for letter in text:
-        result.append(str(alphabet.index(letter)))
+        if letter.isalpha():
+            result.append(str(alphabet.index((letter.lower()))))
     return " ".join(result)
-
-
 
